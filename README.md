@@ -62,15 +62,36 @@ This project applied **ML + statistical testing** to classify customer satisfact
 ---
 
 ### 3. Exploratory Data Analysis  
-Visualizations revealed:  
-- **CSAT distribution** skewed toward satisfied customers  
-- `category = Returns` had lowest average CSAT  
-- Channel differences: inbound calls had higher dissatisfaction  
-- Price distribution → skewed, capped outliers  
+We performed detailed EDA to uncover **patterns in customer interactions** and their relationship with CSAT scores.
+Visualizations revealed: 
+- CSAT distribution is **skewed toward satisfied customers** (imbalance).  
+- Dissatisfaction is highest in **Returns-related interactions**.  
+- **Inbound calls** report lower CSAT compared to other channels.  
+- **Item price** is highly skewed → outliers capped.  
+- **Agent tenure** correlates with service quality.
 
-*Sample Graphs:*  
-![CSAT by Category](images/csat_by_category.png)  
-![CSAT by Channel](images/csat_by_channel.png)  
+1. **Distribution of Customer Service Channel**  
+   - Shows share of Inbound, Outbound, Chat, Email.  <img width="403" height="271" alt="Distribution of Customer Service Channel" src="https://github.com/user-attachments/assets/e553c68e-7f9d-4375-9d51-67e2c734407d" /> 
+
+2. **Item Price Boxplot**  
+   - Highlights extreme outliers in item prices; capped for modeling.  <img width="412" height="160" alt="Item Price Boxplot" src="https://github.com/user-attachments/assets/e42a1435-130c-40c4-8ede-4af544916f44" />
+ 
+
+3. **Item Price Histogram**  
+   - Confirms right-skewed distribution of prices.  <img width="481" height="314" alt="Item Price Histogram" src="https://github.com/user-attachments/assets/e6e863dd-3f4e-4587-be2a-78dddf604e05" />
+
+4. **Agent Tenure Buckets (Barplot)**  
+   - Shows CSAT distribution across new vs experienced agents.  <img width="616" height="468" alt="Agent Tenure Buckets" src="https://github.com/user-attachments/assets/91181f32-9d35-40cb-8034-d56d7108a45b" />
+
+5. **Average CSAT Score by Interaction Category**  
+   - Returns-related cases show the lowest CSAT.  <img width="968" height="566" alt="CSAT by Category" src="https://github.com/user-attachments/assets/445a783b-1861-41cf-bf01-2a9a667aa048" />
+   
+6. **Average CSAT Score by Channel Name**  
+   - Inbound channels trend toward dissatisfaction.  <img width="981" height="510" alt="CSAT by Channel" src="https://github.com/user-attachments/assets/2bbd53eb-9d89-4969-9cb6-b3e56456bc36" />
+
+   
+7. **Average CSAT by Interaction Category × Channel**  
+   - Heatmap reveals combinations with highest dissatisfaction (e.g., Returns + Inbound). <img width="988" height="567" alt="CSAT by Category and Channel" src="https://github.com/user-attachments/assets/1f5ee3d9-9b37-4b39-a286-fecbc158f522" />
 
 ---
 
