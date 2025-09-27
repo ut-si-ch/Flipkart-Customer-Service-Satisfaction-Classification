@@ -70,29 +70,23 @@ Visualizations revealed:
 - **Item price** is highly skewed → outliers capped.  
 - **Agent tenure** correlates with service quality.
 
-1. **Distribution of Customer Service Channel**  
-   - Shows share of Inbound, Outbound, Chat, Email.  <img width="403" height="271" alt="Distribution of Customer Service Channel" src="https://github.com/user-attachments/assets/e553c68e-7f9d-4375-9d51-67e2c734407d" /> 
+### Visualizations  
 
-2. **Item Price Boxplot**  
-   - Highlights extreme outliers in item prices; capped for modeling.  <img width="412" height="160" alt="Item Price Boxplot" src="https://github.com/user-attachments/assets/e42a1435-130c-40c4-8ede-4af544916f44" />
- 
+| **Distribution of Customer Service Channel** <br> Shows share of Inbound, Outbound, Chat, Email. | **Item Price Boxplot** <br> Highlights extreme outliers in item prices; capped for modeling. |
+|:---:|:---:|
+| <img width="350" src="https://github.com/user-attachments/assets/e553c68e-7f9d-4375-9d51-67e2c734407d" /> | <img width="350" src="https://github.com/user-attachments/assets/e42a1435-130c-40c4-8ede-4af544916f44" /> |
 
-3. **Item Price Histogram**  
-   - Confirms right-skewed distribution of prices.  <img width="481" height="314" alt="Item Price Histogram" src="https://github.com/user-attachments/assets/e6e863dd-3f4e-4587-be2a-78dddf604e05" />
+| **Item Price Histogram** <br> Confirms right-skewed distribution of prices. | **Agent Tenure Buckets (Barplot)** <br> Shows CSAT distribution across new vs experienced agents. |
+|:---:|:---:|
+| <img width="350" src="https://github.com/user-attachments/assets/e6e863dd-3f4e-4587-be2a-78dddf604e05" /> | <img width="350" src="https://github.com/user-attachments/assets/91181f32-9d35-40cb-8034-d56d7108a45b" /> |
 
-4. **Agent Tenure Buckets (Barplot)**  
-   - Shows CSAT distribution across new vs experienced agents.  <img width="616" height="468" alt="Agent Tenure Buckets" src="https://github.com/user-attachments/assets/91181f32-9d35-40cb-8034-d56d7108a45b" />
+| **Average CSAT Score by Interaction Category** <br> Returns-related cases show the lowest CSAT. | **Average CSAT Score by Channel Name** <br> Inbound channels trend toward dissatisfaction. |
+|:---:|:---:|
+| <img width="400" src="https://github.com/user-attachments/assets/445a783b-1861-41cf-bf01-2a9a667aa048" /> | <img width="400" src="https://github.com/user-attachments/assets/2bbd53eb-9d89-4969-9cb6-b3e56456bc36" /> |
 
-5. **Average CSAT Score by Interaction Category**  
-   - Returns-related cases show the lowest CSAT.  <img width="968" height="566" alt="CSAT by Category" src="https://github.com/user-attachments/assets/445a783b-1861-41cf-bf01-2a9a667aa048" />
-   
-6. **Average CSAT Score by Channel Name**  
-   - Inbound channels trend toward dissatisfaction.  <img width="981" height="510" alt="CSAT by Channel" src="https://github.com/user-attachments/assets/2bbd53eb-9d89-4969-9cb6-b3e56456bc36" />
-
-   
-7. **Average CSAT by Interaction Category × Channel**  
-   - Heatmap reveals combinations with highest dissatisfaction (e.g., Returns + Inbound). <img width="988" height="567" alt="CSAT by Category and Channel" src="https://github.com/user-attachments/assets/1f5ee3d9-9b37-4b39-a286-fecbc158f522" />
-
+| **Average CSAT by Interaction Category × Channel** <br> Heatmap reveals combinations with highest dissatisfaction (e.g., Returns + Inbound). |
+|:---:|
+| <img width="500" src="https://github.com/user-attachments/assets/1f5ee3d9-9b37-4b39-a286-fecbc158f522" /> |
 ---
 
 ### 4. Hypothesis Testing  
@@ -110,13 +104,16 @@ Visualizations revealed:
 ---
 
 ### 6. Evaluation  
-Classification Report (Random Forest best):  
-              precision    recall  f1-score   support
-Dissatisfied    0.47        0.02    0.05       3014
-Satisfied       0.83        0.99    0.90      14168
-accuracy                                0.82  17182
-macro avg       0.65        0.51    0.47      17182
-weighted avg    0.77        0.82    0.75      17182
+
+**Classification Report (Random Forest - Best Model):**
+
+| Class        | Precision | Recall | F1-Score | Support |
+|--------------|-----------|--------|----------|---------|
+| Dissatisfied | 0.47      | 0.02   | 0.05     | 3014    |
+| Satisfied    | 0.83      | 0.99   | 0.90     | 14168   |
+| **Accuracy** |           |        | **0.82** | 17182   |
+| **Macro Avg**| 0.65      | 0.51   | 0.47     | 17182   |
+| **Weighted Avg** | 0.77  | 0.82   | 0.75     | 17182   |
 
 
 - **Accuracy**: ~82%  
