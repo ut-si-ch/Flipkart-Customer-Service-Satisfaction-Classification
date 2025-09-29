@@ -24,8 +24,7 @@
 ---
 
 ##  Project Overview  
-Flipkart relies on customer support to resolve issues, but **low CSAT scores** often signal poor service experiences, risk of churn, and reduced loyalty.  
-This project applied **ML + statistical testing** to classify customer satisfaction from support interaction data.  
+Flipkart relies on customer support to resolve issues, but **low CSAT scores** often signal poor service experiences, risk of churn, and reduced loyalty.This project applied **ML + statistical testing** to classify customer satisfaction from support interaction data.  
 
 ---
 
@@ -123,12 +122,8 @@ Visualizations revealed:
 ---
 
 ### 7. Deployment  
-- Saved best model as `best_model.pkl` (joblib)  
-- Built a **Streamlit web app**:  
-  - Sidebar: user input fields  
-  - Batch prediction via CSV upload  
-  - Outputs predictions in real-time  
-
+- Saved best model as `best_model.pkl` (joblib)
+  
 ---
 
 ##  Key Results  
@@ -141,7 +136,7 @@ Visualizations revealed:
 ## Final Conclusions  
 - Flipkart’s CSAT strongly depends on **channel, category, and order info availability**  
 - Random Forest provided good baseline performance but needs improvement in detecting dissatisfied customers  
-- Model pipeline + Streamlit app demonstrate **end-to-end ML deployment skills**  
+- Model pipeline demonstrate **end-to-end ML Analytical skills**  
 
 ---
 
@@ -149,7 +144,11 @@ Visualizations revealed:
 - Incorporate **text analytics** of customer remarks (TF-IDF, BERT)  
 - Use **XGBoost / Transformers** for better minority class recall  
 - Add **SHAP explainability** for trust in predictions  
-- Deploy at scale with **batch + streaming pipelines**  
+- Deploy at scale with **batch + streaming pipelines** with functionality as **Streamlit web app**:  
+  - Sidebar: user input fields  
+  - Batch prediction via CSV upload  
+  - Outputs predictions in real-time  
+  
 
 ---
 
